@@ -1,59 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Brendas Brincolines</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./style/main.css">
+<link rel="stylesheet" href="./mystyle.css" type="text/css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-<body class='body'>
-
+<body class="outer">
+  <div class='body'>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -79,84 +35,93 @@ body, html {
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Brendas <span class="w3-hide-small">Brincolines</span></span>
   </div>
-  <img style="display: block;
+  <!-- <img style="display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; border-radius: 2%" src="./images/brenda7.jpeg" alt="">
+  width: 50%; border-radius: 2%" src="./images/b2.jpeg" alt=""> -->
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container  w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>We rent jumpies, tents, tables and chairs for your events.</em></p>
-  <p class="w3-center"><em>We rent at house parties or parks. Give us a call for a free estimate.</em></p>
+  <p class="w3-center"><em>We rent jumpies, tents, tables and chairs for social events.</em></p>
+  <p class="w3-center"><em>Delivery, setup, and pickup is free of cost.</em></p>
+  <p class="w3-center"><em>We have delivered services at house parties, venues, and parks. Give us a call for a free estimate.</em></p>
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5+</span><br>
+    <span class="w3-xlarge">7+</span><br>
     Years of service
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">300+</span><br>
+    <span class="w3-xlarge">100+</span><br>
     Clients served
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">89+</span><br>
-    Happy Clients
+    Events
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+    <span class="w3-xlarge">5+</span><br>
+    Cities
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="header w3-display-container w3-opacity-min" id="header">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">PHOTOS</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">OUR JUMPIES</h3>
-  <p class="w3-center"><em>Here are some of our items that are available.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="/images/b1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="/images/b3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="/images/b4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
+        <img src="/images/b6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
+    
+
     <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="/images/b7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="/images/b2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="/images/b8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
 
     <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        <img src="/images/brenda11.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+
+      <div class="w3-col m3">
+          <img src="/images/brenda13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+
+        <div class="w3-col m3">
+      <img src="/images/brenda6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
   </div>
 </div>
@@ -171,17 +136,15 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="header w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT US</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">RENT FROM US</h3>
-  <p class="w3-center"><em>We'd love to help you put together your next event!</em></p>
-
+  
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
@@ -189,8 +152,8 @@ body, html {
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
       </div>
-      <p>Contact us for a rental:</p>
-      <form action="/action_page.php" target="_blank">
+      <!-- <p>Contact us for a rental:</p> -->
+      <!-- <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -203,7 +166,7 @@ body, html {
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
+      </form> -->
     </div>
   </div>
 </div>
@@ -212,10 +175,10 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official fa-lg w3-hover-opacity"></i>
+    <i class="fa fa-instagram fa-lg w3-hover-opacity"></i>
   </div>
-  <p>Brendas</p>
+  <p>Brendas Brincolines</p>
 </footer>
  
 <script>
@@ -249,5 +212,6 @@ function toggleFunction() {
 }
 </script>
 
+</div>
 </body>
 </html>
