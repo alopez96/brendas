@@ -1,15 +1,6 @@
 .body{
-    /* background-color: rgba(0, 0, 0, 0.788);
-    color: #2E9CCA; */
-    background-color: #29648A;
+    background-color: rgba(0, 0, 0, 0.788);
     color: #fff;
-    padding:10px;
-}
-
-.outer{
-    background-color: #ffff;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
