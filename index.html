@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./translation.js"></script>
+
 <body class='body'>
 
 <!-- Navbar (sit on top) -->
@@ -16,9 +19,17 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+    <a href="#about" key="nav-about"
+    class="lang w3-bar-item w3-button w3-hide-small">ABOUT</a>
+    <a href="#portfolio" key="nav-portfolio"
+    class="lang w3-bar-item w3-button w3-hide-small">PORTFOLIO</a>
+    <a href="#contact" key="nav-contact" 
+    class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+    <!-- Language buttons -->
+    
+      <button class="translate button" id="en">English</button>
+      <button class="translate button" id="sp">Español</button>
+    
   </div>
 
   <!-- Navbar on small screens -->
@@ -32,7 +43,9 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="about">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Brendas <span class="w3-hide-small">Brincolines</span></span>
+    <span class="lang w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
+    key="header"
+    >Brendas <span class="w3-hide-small">Jumpies</span></span>
   </div>
   <!-- <img style="display: block;
   margin-left: auto;
@@ -42,28 +55,42 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container  w3-padding-64">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>We rent jumpies, tents, tables and chairs for social events.</em></p>
-  <p class="w3-center"><em>Delivery, setup, and pickup is free of cost.</em></p>
-  <p class="w3-center"><em>We have delivered services at house parties, venues, and parks. Give us a call for a free estimate.</em></p>
+  <h3 class="lang w3-center" key="about-header">ABOUT US</h3>
+  <p class="lang w3-center" key="about-sub1">
+    <em>We rent jumpies, tents, tables and chairs for social events.</em>
+  </p>
+  <p class="lang w3-center" key="about-sub2">
+    <em>Delivery and pickup is free of cost within Santa Rosa. There is an extra cost for driving outside of Santa Rosa.</em>
+  </p>
+  <p class="lang w3-center" key="about-sub3">
+    <em>We have delivered services at house parties, venues, and parks. Give us a call for a free estimate.</em>
+  </p>
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">7+</span><br>
-    Years of service
+    <div class="lang" key="about-sub4">
+      Years of service
+    </div>
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">100+</span><br>
-    Clients served
+    <span class="w3-xlarge">500+</span><br>
+    <div class="lang" key="about-sub5">
+      Clients served
+    </div>
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Events
+    <span class="w3-xlarge">500+</span><br>
+    <div class="lang" key="about-sub6">
+      Events
+    </div>
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">5+</span><br>
-    Cities
+    <div class="lang" key="about-sub7">
+        Cities
+      </div>
   </div>
 </div>
 
@@ -80,48 +107,50 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="/images/b1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="/images/b1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="/images/b3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="/images/b3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="/images/b4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="/images/b4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-        <img src="/images/b6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        <img src="/images/b6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
       </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    
-
     <div class="w3-col m3">
-      <img src="/images/b7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="/images/b7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="/images/b2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="/images/b2.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="/images/b8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="/images/b8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-        <img src="/images/brenda11.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        <img src="/images/brenda11.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
       </div>
 
       <div class="w3-col m3">
-          <img src="/images/brenda13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-        </div>
+          <img src="/images/brenda13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
 
-        <div class="w3-col m3">
-      <img src="/images/brenda6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <div class="w3-col m3">
+      <img src="/images/brenda6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
+
+    <div class="w3-col m3">
+        <img src="/images/IMG_0150.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
   </div>
 </div>
 
@@ -147,9 +176,9 @@
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Santa Rosa, CA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Santa Rosa, CA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> (707) 921-6530 or (707) 703-3628<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>isidrocrespo@yahoo.com<br>
       </div>
       <!-- <p>Contact us for a rental:</p> -->
       <!-- <form action="/action_page.php" target="_blank">
@@ -172,10 +201,12 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#about" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official fa-lg w3-hover-opacity"></i>
-    <i class="fa fa-instagram fa-lg w3-hover-opacity"></i>
+    <a class="fa fa-facebook-official fa-lg w3-hover-opacity" target="blank"
+    href="https://www.facebook.com/pages/category/Airport/Brendas-Brincolines-Santa-Rosa-670969026572962/">
+    </a>
+    <!-- <i class="fa fa-instagram fa-lg w3-hover-opacity"></i> -->
   </div>
   <p>Brendas Brincolines</p>
 </footer>
