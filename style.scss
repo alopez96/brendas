@@ -1,0 +1,75 @@
+$primary-color: #AF2D2D;
+$btn-text-size: 2vw;
+
+
+.body{
+    background-color: #fff;
+}
+
+.lang-btn{
+  background-color: rgba(9, 59, 197, 0); 
+  border-width: 2px;
+  border-color: #000;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: $btn-text-size - 0.5vw;
+}
+
+h1{
+  font-family: 'Rosario', sans-serif;
+  text-shadow: 2px 2px #fff;
+}
+
+.hero{
+  min-height: 100vh;
+  height: 100vh;
+  align-items: center;
+  border-bottom: 0px;
+  background: #fff;
+  color: #000;
+  padding: 0rem 5.6rem;
+  z-index: -1;
+  background-image: url('./Desktop1.svg')
+}
+
+.header-text{
+  font-size: 3vw;
+  margin-bottom: -1vw;
+}
+
+
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+.primary-btn{
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  font-size: $btn-text-size;
+}
+
+/* phone screen */
+@media screen and (max-width: 450px) {
+  .hero{
+      background-image: none;
+  }
+
+  .lang-btn{
+    background-color: rgba(9, 59, 197, 0); 
+    border-width: 2px;
+    border-color: #000;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: $btn-text-size + 2vw;
+  }
+
+  .primary-btn{
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    font-size: $btn-text-size + 4vw;
+  }
+
+  .header-text{
+    font-size: 5vw; 
+  }
+}
+
+
