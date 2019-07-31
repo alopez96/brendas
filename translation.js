@@ -13,7 +13,11 @@ var arrayLang = {
       'about-sub6': 'Events',
       'about-sub7': 'Cities',
       'port': 'PHOTOS',
-      'contact': 'CONTACT US'
+      'contact': 'CONTACT US',
+      'reg': 'Regular jumpies',
+      'slide': 'Jumpies with slide',
+      'water': 'Jumpies with water slide',
+      'view': 'View all jumpies'
     },
       'sp': {
         'header': 'Brendas Brincolines',
@@ -29,7 +33,8 @@ var arrayLang = {
         'about-sub6': 'Eventos',
         'about-sub7': 'Ciudades',
         'port': 'FOTOS',
-        'contact': 'CONTACTE NOS'
+        'contact': 'CONTACTE NOS',
+        'view': 'Ver todos los brincolines'
       }
   };
 

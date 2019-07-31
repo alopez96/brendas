@@ -11,12 +11,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <link href="https://fonts.googleapis.com/css?family=Rosario&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script src="./translation.js"></script>
 
 <body class='body'>
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
         <div>
             <!-- Language buttons -->
             <button class="translate lang-btn" id="en">English</button>
@@ -27,12 +28,12 @@
   <!-- Hero page -->
   <div class="hero">
     <h1 id="header-text" class="lang" key="header">Brenda's Jumpies</h1>
-    <div><a class="primary-btn" href="#contact-section">Contact</a> </div>
+    <div><a class="primary-btn lang" key="contact" href="#contact-section">Contact</a> </div>
   </div>
 
   <!-- (About Section) -->
   <div id="about-section">
-    <h1 class="lang" key="">ABOUT US</h1>
+    <h1 class="lang" key="nav-about">ABOUT US</h1>
     <div class='about-containers'>
       <div class='about-container'>
         <img src="./icons/ballon.svg" class='icon' alt="">
@@ -60,27 +61,32 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h4>Regular jumpies</h4>
+        <h4 class="lang" key="reg">Regular jumpies</h4>
         <img src="./images/b5.jpg" class="img" alt="">
         <p>$80- $100</p>
       </div>
       <div class="col">
-        <h4>Jumpies with slide</h4>
-        <img src="./images/b2.jpeg" class="img" alt="">
+        <h4 class="lang" key="slide">Jumpies with slide</h4>
+        <img src="./images/brenda6.jpeg" class="img" alt="">
         <p>$160-$220</p>
       </div>
       <div class="col">
-          <h4>Jumpies with water slide</h4>
+          <h4 class="lang" key="water">Jumpies with water slide</h4>
           <img src="./images/IMG_0150.jpeg" class="img" alt="">
           <p>$200-$230</p>
         </div>
     </div>  
-    <a href="./jumpies.html" class="secondary-btn">View All Jumpies</a>
+    <a href="./jumpies.html" class="secondary-btn lang" key="view">View all jumpies</a>
+    <div style="margin-top: 50px;">
+      <h4>Tents</h4>
+      <img src="./images/brenda13.jpg" class="img" alt="">
+      <p>$150-$200</p>
+  </div>
   </div>
 
 
   <div id="contact-section">
-    <h1 class="header-text">CONTACT US</h1>
+    <h1 class="header-text lang" key="contact" >CONTACT US</h1>
     <i class="fa fa-map-marker fa-lg fa-item"></i>Santa Rosa, CA<br>
     <i class="fa fa-phone fa-lg fa-item"></i>(707) 921-6530 or (707) 703-3628<br>
     <i class="fa fa-envelope fa-lg fa-item"></i>isidrocrespo@yahoo.com<br>

@@ -1,7 +1,15 @@
 $primary-color: #AF2D2D;
 $btn-text-size: 2vw;
 
+.navbar{
+  background-color: transparent;
+}
+
 p{
+  font-family: 'Lato', 'sans-serif';
+}
+
+.container{
   font-family: 'Lato', 'sans-serif';
 }
 
@@ -26,7 +34,7 @@ p{
   align-items: center;
   border-bottom: 0px;
   color: #000;
-  padding: 0rem 5.6rem;
+  padding: 5rem 5.6rem;
   z-index: -1;
 }
 
@@ -107,6 +115,7 @@ p{
   margin: 20px;
   margin-bottom: 100px;
   margin-top: 100px;
+  font-family: 'Lato', 'sans-serif';
 }
 
 .fa-item{
@@ -151,9 +160,8 @@ footer{
   }
 
   .primary-btn{
-    color: $primary-color;
-    border: 2px solid $primary-color;
-    font-size: $btn-text-size + 4vw;
+    font-size: 22px;
+    margin-top: 100px;
   }
 
   .header-text{
