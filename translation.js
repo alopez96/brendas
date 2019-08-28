@@ -1,12 +1,13 @@
 var arrayLang = {
     'en': {
-      'header': 'Brendas Jumpies',
+      'header': 'Brenda\'s Jumpies',
+      'sub-header': 'Rent jumpies, tables, chairs, and tents for the ocasion.',
       'nav-about': 'ABOUT',
       'nav-portfolio': 'PORTFOLIO',
       'nav-contact': 'CONTACT',
       'about-header': 'ABOUT US',
       'about-sub1': 'We rent jumpies, tents, tables and chairs for social events.',
-      'about-sub2': 'Delivery and pickup is free of cost within Santa Rosa. There is an extra cost for driving outside of Santa Rosa.',
+      'about-sub2': 'Delivery of equipment provided. Note there is extra charge for cities outside of Santa Rosa.',
       'about-sub3': 'We have delivered services at house parties, venues, and parks. Give us a call for a free estimate.',
       'about-sub4': 'Years of service',
       'about-sub5': 'Clients served',
@@ -21,6 +22,7 @@ var arrayLang = {
     },
       'sp': {
         'header': 'Brendas Brincolines',
+        'sub-header': 'Renta brincolines, sillas, mesas y carpas para la ocasion.',
         'nav-about': 'SOBRE NOSOTROS',
         'nav-portfolio': 'FOTOS',
         'nav-contact': 'CONTACTA',
