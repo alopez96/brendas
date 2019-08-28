@@ -12,12 +12,13 @@ p {
 }
 
 .lang-btn {
-  background-color: rgba(9, 59, 197, 0);
+  background-color: transparent;
   border-width: 2px;
-  border-color: #000;
+  border-color: #CE3303;
   top: 5px;
   left: 10px;
   font-size: 1em;
+  color: #CE3303;
 }
 
 #header-text {
@@ -28,7 +29,7 @@ p {
 
 .sub-header {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Roboto", "sans-serif";
 }
 
