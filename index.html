@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <link href="https://fonts.googleapis.com/css?family=Rosario&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -63,31 +60,33 @@
 
 
   <!-- images -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h4 class="lang" key="reg">Regular jumpies</h4>
-        <img src="./images/b5.jpg" class="img" alt="">
-        <p>$80- $100</p>
-      </div>
-      <div class="col">
-        <h4 class="lang" key="slide">Jumpies with slide</h4>
-        <img src="./images/brenda6.jpeg" class="img" alt="">
-        <p>$160-$230</p>
-      </div>
-      <div class="col">
-          <h4>Tents</h4>
-          <img src="./images/brenda13.jpg" class="img" alt="">
-          <p>$150-$200</p>
-      </div>
-    </div>  
-    <a href="./jumpies.html" class="secondary-btn lang" key="view">View all jumpies</a>
-  </div>
+  <div class="image-section">
+    <div class="image-containers">
+        <div class="image-container">
+          <img src="./images/new4JPG.JPG" class="img" alt="">
+          <h4 class="lang" key="reg">Regular jumpies</h4>
+          <p>$80- $100</p>
+        </div>
+        <div class="image-container">
+          <img src="./images/brenda6.jpeg" class="img" alt="">
+          <h4 class="lang" key="slide">Jumpies with slide</h4>
+          <p>$160-$230</p>
+        </div>
+        <div class="image-container">
+            <img src="./images/brenda13.jpg" class="img" alt="">
+            <h4>Tents</h4>
+            <p>$150-$200</p>
+        </div>
+    </div>
+    <div class="image-btn">
+        <a href="./jumpies.html" class="secondary-btn lang" key="view">View all jumpies</a>
+    </div>
+</div>
 
 
   <div id="contact-section">
     <h1 class="header-text lang" key="contact" >CONTACT US</h1>
-    <i class="fa fa-map-marker fa-lg fa-item"></i>Santa Rosa, CA
+    <!-- <i class="fa fa-map-marker fa-lg fa-item"></i>Santa Rosa, CA
     <br>
     <a href="tel:707-921-6530"><i class="fa fa-phone fa-lg fa-item"></i></a>
     <a href="tel:707-921-6530">(707) 921-6530</a> or
@@ -96,7 +95,33 @@
     <br>
     <a href="mailto:isidrocrespo@yahoo.com"> 
       <i class="fa fa-envelope fa-lg fa-item"></i>isidrocrespo@yahoo.com</a>
-    <br>
+    <br> -->
+    <div class="contact-containers">
+      <div class="contact-container">
+        <a href="tel:707-921-6530"><img src="./icons/call-calling.svg" alt=""></a>
+        <p> <a href="tel:707-921-6530">(707) 921-6530</a>
+          or
+          <a href="tel:703-3628">(707) 703-3628</a>
+            <p>- Ask for Anabel or Isidro</p></p>
+      </div>
+      <div class="contact-container">
+        <img src="./icons/pin.svg" alt="">
+        <p>Santa Rosa, CA</p>
+      </div>
+      <div class="contact-container">
+          <a href="mailto:isidrocrespo@yahoo.com"><img src="./icons/mail.svg" alt=""></a>
+          <p><a href="mailto:isidrocrespo@yahoo.com">isidrocrespo@yahoo.com</a></p>
+        </div>
+        <div class="contact-container">
+            <a href="https://www.facebook.com/pages/category/Airport/Brendas-Brincolines-Santa-Rosa-670969026572962/">
+              <img src="./icons/facebook.svg" alt=""></a>
+              <p>
+              <a href="https://www.facebook.com/pages/category/Airport/Brendas-Brincolines-Santa-Rosa-670969026572962/">
+              Brendas Brincolines</a>
+            </p>
+          </div>
+
+    </div>
   </div>
 
 <!-- Footer -->
