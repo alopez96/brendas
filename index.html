@@ -11,29 +11,40 @@
 <link href="https://fonts.googleapis.com/css?family=Rosario&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+<!-- scroll animation -->
+<link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+
 <script src="./translation.js"></script>
 
 <body class='body'>
 
     <nav class="navbar">
-        <div>
             <!-- Language buttons -->
             <button class="translate lang-btn" id="en">English</button>
             <button class="translate lang-btn" id="sp">Español</button>
-          </div>
     </nav>
 
   <!-- Hero page -->
   <div class="hero">
+    <div
+    data-sal-duration="1200"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce">
     <h1 id="header-text" class="lang" key="header">Brenda's Jumpies</h1>
     <p class="sub-header lang" key="sub-header">Rent jumpies, tables, chairs, and tents for the ocasion.</p>
     <div class="cta">
       <a class="primary-btn lang" key="nav-contact" href="#contact-section">Contact</a> 
     </div>
   </div>
+  </div>
 
   <!-- (About Section) -->
-  <div id="about-section">
+  <div id="about-section"
+        data-sal-duration="1200"
+        data-sal="fade"
+        data-sal-delay="30"
+        data-sal-easing="ease-out-bounce">
     <div class='about-containers'>
       <div class='about-container'>
         <img src="./icons/ballon.svg" class='icon' alt="">
@@ -86,16 +97,6 @@
 
   <div id="contact-section">
     <h1 class="header-text lang" key="contact" >CONTACT US</h1>
-    <!-- <i class="fa fa-map-marker fa-lg fa-item"></i>Santa Rosa, CA
-    <br>
-    <a href="tel:707-921-6530"><i class="fa fa-phone fa-lg fa-item"></i></a>
-    <a href="tel:707-921-6530">(707) 921-6530</a> or
-    <a href="tel:703-3628">(707) 703-3628</a>
-      (Ask for Anabel or Isidro)
-    <br>
-    <a href="mailto:isidrocrespo@yahoo.com"> 
-      <i class="fa fa-envelope fa-lg fa-item"></i>isidrocrespo@yahoo.com</a>
-    <br> -->
     <div class="contact-containers">
       <div class="contact-container">
         <a href="tel:707-921-6530"><img src="./icons/call-calling.svg" alt=""></a>
@@ -134,5 +135,8 @@
   <p>Brendas Brincolines</p>
 </footer>
 
+  <script src="./node_modules/sal.js/dist/sal.js"></script>
+
+      <script>sal();</script>
 </body>
 </html>
