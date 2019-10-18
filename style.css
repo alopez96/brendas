@@ -3,7 +3,15 @@
   background-image: linear-gradient(to left, #CE3303, #404BAF);
 }
 
-p {
+p a {
+  font-family: "Roboto", "sans-serif";
+}
+
+a {
+  font-family: "Roboto", "sans-serif";
+}
+
+.image-section p {
   font-family: "Lato", "sans-serif";
 }
 
@@ -17,6 +25,7 @@ p {
   border-color: #CE3303;
   font-size: 1em;
   color: #CE3303;
+  margin: 0.5rem;
 }
 
 #header-text {
